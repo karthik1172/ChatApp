@@ -22,10 +22,7 @@ struct ContentView: View {
             if chatManager.chats.isEmpty {
                 emptyState
             } else {
-                //chatListView
-                
-                ChatDetailView(chat: chatManager.chats.last ?? Chat(id: "", messages: []), chatManager: chatManager)
-                
+                chatListView
             }
             
             if wsManager.isOffline {

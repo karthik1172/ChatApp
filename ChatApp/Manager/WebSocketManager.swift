@@ -7,7 +7,7 @@ class WebSocketManager: NSObject, ObservableObject, URLSessionWebSocketDelegate 
     @Published var isOffline = false
     
     private var webSocket: URLSessionWebSocketTask?
-    private let url = URL(string: "wss://echo.websocket.org/")!
+    private let url = URL(string: "wss://demo.piesocket.com/v3/channel_123?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self")!
     private var urlSession: URLSession!
     private let monitor = NWPathMonitor()
     
